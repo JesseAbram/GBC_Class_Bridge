@@ -45,3 +45,40 @@ const send = async (to, amount) => {
       
 
 }
+
+
+//const ADDRESS = "0xae41b214b2A22eEdc85a63bAaA65A392E0184E50"
+// const ABI = [
+// 	{
+// 		"constant": false,
+// 		"inputs": [],
+// 		"name": "connect",
+// 		"outputs": [],
+// 		"payable": true,
+// 		"stateMutability": "payable",
+// 		"type": "function"
+// 	},
+// 	{
+// 		"inputs": [],
+// 		"payable": false,
+// 		"stateMutability": "nonpayable",
+// 		"type": "constructor"
+// 	},
+// 	{
+// 		"anonymous": false,
+// 		"inputs": [
+// 			{
+// 				"indexed": true,
+// 				"name": "",
+// 				"type": "address"
+// 			},
+// 			{
+// 				"indexed": false,
+// 				"name": "",
+// 				"type": "uint256"
+// 			}
+// 		],
+// 		"name": "Bridge",
+// 		"type": "event"
+// 	}
+// ]
