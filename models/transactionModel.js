@@ -40,6 +40,14 @@ let transactionStateSchema = new Schema({
     ref : 'amountSent'
     // Wei
   },
+  receivedTxHash : {
+    type : String,
+    ref : 'receivedTxHash'
+  },
+  sentTxHash : {
+    type : String,
+    ref : 'sentTxHash'
+  },
   created_at : {
     type : Date,
     default : Date.now
