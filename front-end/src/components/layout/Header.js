@@ -6,7 +6,7 @@ export default function Header() {
     <header style={headerStyle}>
       <h1>GBC Bridge</h1>
       <Link style={linkStyle} to="/Rinkeby">
-        Rinkeby
+        Rinkeby (Not Active)
       </Link>{" "}
       |{" "}
       <Link style={linkStyle} to="/Kovan">
