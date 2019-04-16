@@ -1,11 +1,22 @@
-const ethers = require('ethers')
-const {ADDRESS, ABI, PRIVATE_KEY} = require('./credentials')
+const ethers = require('ethers');
+const {ADDRESS, ABI, PRIVATE_KEY} = require('./credentials');
+var database = require('./database/database');
+var transactionController = require('./controllers/transactionStateController');
 
+// transactionController.new
+// transactionController.save
+// transactionController.update
+// transactionController.index
+// transactionController.show
 
 const rinkeby = ethers.getDefaultProvider('rinkeby')
 const kovan = ethers.getDefaultProvider('kovan')
 
 const contract = new ethers.Contract(ADDRESS, ABI, kovan);
+
+
+// Connect to DB.
+database();
 
 contract.on("Bridge", (from, amount) => {
 
