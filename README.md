@@ -10,3 +10,6 @@ One Student wil be assigned the role of Architect
 * Will create Pipeline
 * Will set standards and flows
 * Will be in charge of checking merging and redeploying PRs
+
+## Hosting information:
+The frontend will be hosted on 52.60.78.175:3000
