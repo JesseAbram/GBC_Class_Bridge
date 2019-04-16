@@ -1,4 +1,5 @@
 import React from "react";
+import TxHash from "./TxHash";
 
 export default function Transfer() {
   return (
@@ -9,6 +10,7 @@ export default function Transfer() {
           <input placeholder={"Amount in Wei"} />
           <button type={"submit"}>Send</button>
         </form>
+        <TxHash/>
       </div>
     </React.Fragment>
   );

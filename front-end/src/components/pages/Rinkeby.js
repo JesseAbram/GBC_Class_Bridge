@@ -1,6 +1,6 @@
 import Header from "../layout/Header";
 import React from "react";
-import Transfer from "../Transfer";
+import Transfer from "./Transfer";
 
 export default function Rinkeby() {
   return (
