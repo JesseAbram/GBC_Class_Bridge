@@ -7,7 +7,7 @@ const kovan = ethers.getDefaultProvider('kovan')
 
 const contract = new ethers.Contract(ADDRESS, ABI, kovan);
 
-contract.on("BridgeTransfer", (from, amount) => {
+contract.on("Bridge", (from, amount) => {
 
     object = {
         from,
