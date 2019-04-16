@@ -31,7 +31,7 @@ transactionStateController.show = function (req, res) {
 };
 
 // Save a new transactionState
-transactionState.save = function (req, res) {
+transactionStateController.save = function (req, res) {
   let newTransactionState = new TransactionState(req.body);
 
   newTransactionState.save((err) => {
@@ -46,7 +46,7 @@ transactionState.save = function (req, res) {
 };
 
 // Update an existing transactionState
-transactionState.update = function (req, res) {
+transactionStateController.update = function (req, res) {
   TransactionState.findByIdAndUpdate(
     req.params.id,
     {
@@ -68,7 +68,7 @@ transactionState.update = function (req, res) {
 };
 
 // Delete an existing transactionState
-transactionState.delete = function (req, res) {
+transactionStateController.delete = function (req, res) {
   TransactionState.findByIdAndDelete(
     req.params.id,
     (err, transactionState) => {
