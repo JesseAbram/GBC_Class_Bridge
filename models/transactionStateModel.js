@@ -10,43 +10,36 @@ let transactionStateSchema = new Schema({
   },
   direction : {
     type : Number,
-    ref : 'direction'
     // 1 = Kovan -> Rinkby, 2 = Rinkby -> Kovan
   },
   status : {
     type : String,
-    ref : 'status'
     // "Recieved, Sent & Complete"
   },
   userAddress : {
     type : String,
-    ref : 'userAddress'
   },
   kovanToRinkbyExchangeRate : {
     type : Number,
-    ref : 'kovanToRinkbyExchangeRate'
   },
   rinkbyToKovanExchangeRate : {
     type : Number,
-    ref : 'rinkbyToKovanExchangeRate'
   },
   amountReceived : {
     type : Number,
-    ref : 'amountReceived'
     // Wei
   },
   amountSent : {
     type : Number,
-    ref : 'amountSent'
+    default : 0
     // Wei
   },
   receivedTxHash : {
     type : String,
-    ref : 'receivedTxHash'
   },
   sentTxHash : {
     type : String,
-    ref : 'sentTxHash'
+    default : ""
   },
   created_at : {
     type : Date,
